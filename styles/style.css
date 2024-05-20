@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "GROBOLD";
+    src: url(../fonts/Grobold/GROBOLD.ttf);
+}
+
+@font-face {
+    font-family: "SF Pro Text 400";
+    src: url("../fonts/sfpro/SFProText-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SF Pro Text 500";
+    src: url("../fonts/sfpro/SFProText-Medium.ttf");
+}
+
+button {
+    border: 0;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    background-image: url("../assets/main-page/background-img.png");
+    background-size: cover;
+}
+
+header {
+    font-family: "SF Pro Text 500";
+    font-size: 17px;
+    color: white;
+    padding: 11px 16px 0;
+    margin-bottom: 19px;
+}
+
+.subtitle {
+    font-family: "SF Pro Text 400";
+    font-size: 13px;
+}
+
+.score {
+    gap: 12px;
+}
+
+.right {
+    position: relative;
+}
+
+.copy-btn {
+    background: transparent;
+}
+
+.copy {
+    position: absolute;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 9px;
+
+    left: -170px;
+    top: 40px;
+
+    background-color: #ffffff;
+    color: #151a30;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+.points {
+    font-family: "GROBOLD";
+    font-size: 32px;
+    color: white;
+    font-weight: 500;
+}
+
+.bg-tiles {
+    height: 100%;
+}
+
+main {
+    position: relative;
+}
+
+.background {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 80vh;
+}
+
+.tower {
+    position: absolute;
+    top: 15vh;
+    left: 5%;
+    z-index: 2;
+}
+
+.catapult-animation {
+    position: absolute;
+    top: 87px;
+    left: 67px;
+    background: url("../assets/main-page/DS.png") left top;
+    height: 72px;
+    width: 80px;
+}
+
+.catapult-animation.active {
+    animation: run 0.4s steps(8);
+}
+
+@keyframes run {
+    0% {
+        background-position: 0;
+    }
+
+    100% {
+        background-position: -576px;
+    }
+}
+
+.perks-section {
+    position: absolute;
+    bottom: 15%;
+    z-index: 3;
+}
+
+.amo,
+.guild {
+    background: linear-gradient(
+            90.37deg,
+            #fd7f01 -3.16%,
+            #ffc708 20.5%,
+            #ff6b04 105.79%
+    );
+    border-radius: 6px;
+    padding: 4px 8px;
+    border: 0;
+    gap: 12px;
+}
+
+.amo-img img {
+    height: 100%;
+}
+
+.guild {
+    background: linear-gradient(
+            89.65deg,
+            #a4919d 0.17%,
+            #dcc6da 10.25%,
+            #8c5f76 99.64%
+    );
+    border-radius: 6px;
+    border: 0;
+    padding: 4px 8px;
+    gap: 12px;
+}
+
+.amo-points,
+.guild-points {
+    font-family: "GROBOLD";
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+}
+
+.amo-subtitle,
+.guild-subtitle {
+    font-family: "SF Pro Text 500";
+    font-size: 12px;
+    color: white;
+    text-transform: uppercase;
+}
+
+footer {
+    position: absolute;
+    bottom: 3%;
+    z-index: 3;
+    width: 100%;
+}
+
+.menu {
+    position: relative;
+    background: rgba(71, 18, 50, 0.5);
+
+    width: 95%;
+    margin: 0 auto;
+
+    border: 1px solid #f2ba69;
+    border-radius: 40px;
+    padding: 15px;
+}
+
+.gg,
+.boost,
+.xs {
+    background: transparent;
+    border: 0;
+}
+
+.gg-text,
+.boost-text,
+.xs-text {
+    font-family: "GROBOLD";
+    font-weight: 500;
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.line {
+    width: 1px;
+    background: rgba(255, 243, 228, 1);
+}
